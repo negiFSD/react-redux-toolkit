@@ -17,4 +17,4 @@ const cartSlice = createSlice({
 });
 console.log(cartSlice);
 
-export default cartSlice.reducer;  // reducer provides intital state to the global level
+export default cartSlice.reducer;  // reducer provides intital state to the global level.
