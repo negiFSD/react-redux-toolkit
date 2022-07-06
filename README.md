@@ -308,7 +308,7 @@ const CartContainer = () => {
   return (
     <button
       className='btn clear-btn'
-      onClick={() => {
+      onClick={() => { 
         dispatch(clearCart());
       }}
     >
@@ -363,6 +363,7 @@ const cartSlice = createSlice({
       });
       state.amount = amount;
       state.total = total;
+      
     },
   },
 });

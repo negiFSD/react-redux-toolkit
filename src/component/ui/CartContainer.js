@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import CartItem from './CartItem'
-import { clearCart } from '../features/cart/cartSlice'
+import { clearCart, calculateTotals } from '../features/cart/cartSlice'
 
 function CartContainer() {
     const dispatch = useDispatch()
  const {amount, cartItems, totalAmount} =   useSelector((store)=>store.cart)
+
+ useEffect(()=>{
+     dispatch(calculateTotals())
+ },[cartItems])
 
  if(amount<1){
      return (
@@ -34,10 +38,11 @@ function CartContainer() {
 <hr/>
 <div className='cart-total'>
  <h4>
-     total <span>{totalAmount}</span>
+     total <span>{totalAmount.toFixed(2)}</span>
  </h4>
 </div>
-<button className='btn clear-btn' onClick={()=>dispatch(clearCart())}>clear cart</button>
+ <button className='btn clear-btn' onClick={()=>dispatch(clearCart())}>clear cart</button>
+
 </footer>
 </section>
   )
