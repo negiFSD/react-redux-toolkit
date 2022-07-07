@@ -466,7 +466,7 @@ export default App;
 
 - create components/Modal.js
 
-```js
+```js 
 const Modal = () => {
   return (
     <aside className='modal-container'>
@@ -477,7 +477,7 @@ const Modal = () => {
             confirm
           </button>
           <button type='button' className='btn clear-btn'>
-            cancel
+            cancel  
           </button>
         </div>
       </div>
