@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-redux-toolkit/static/css/main.dd45d222.css",
+    "main.js": "/react-redux-toolkit/static/js/main.c21d7fb2.js",
+    "index.html": "/react-redux-toolkit/index.html",
+    "main.dd45d222.css.map": "/react-redux-toolkit/static/css/main.dd45d222.css.map",
+    "main.c21d7fb2.js.map": "/react-redux-toolkit/static/js/main.c21d7fb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd45d222.css",
+    "static/js/main.c21d7fb2.js"
+  ]
+}
